@@ -16,19 +16,19 @@ Apuntes Visual Basic desde cero.
 
 #### Ámbito de una variable
 
-- ## Operadores
+## Operadores
 
-- ## Condicionales
+## Condicionales
 
-- ## Bucles
+## Bucles
 
-- ## Arrays
+## Arrays
 
 #### Inicialización de un array
 
 #### Cómo recorrer un array
 
-- ## Funciones y subrutinas
+## Funciones y subrutinas
 
- #### Paso por referencia y valor
+#### Paso por referencia y valor
 
