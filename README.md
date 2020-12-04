@@ -1,6 +1,6 @@
 # ApuntesVB
 Apuntes Visual Basic desde cero.
-
+# Índice
 - [Variables y tipos de datos](#variables-y-tipos-de-datos)
   * [Ámbito de una variable](#-mbito-de-una-variable)
 - [Operadores](#operadores)
@@ -14,7 +14,7 @@ Apuntes Visual Basic desde cero.
 
 ## Variables y tipos de datos
 
-### Ámbito de una variable
+#### Ámbito de una variable
 
 ## Operadores
 
@@ -24,11 +24,11 @@ Apuntes Visual Basic desde cero.
 
 ## Arrays
 
-### Inicialización de un array
+#### Inicialización de un array
 
-### Cómo recorrer un array
+#### Cómo recorrer un array
 
 ## Funciones y subrutinas
 
-### Paso por referencia y valor
+#### Paso por referencia y valor
 
