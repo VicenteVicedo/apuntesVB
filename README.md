@@ -12,23 +12,23 @@ Apuntes Visual Basic desde cero.
 - [Funciones y subrutinas](#funciones-y-subrutinas)
   * [Paso por referencia y valor](#paso-por-referencia-y-valor)
 
-## Variables y tipos de datos
+- ## Variables y tipos de datos
 
-#### Ámbito de una variable
+ * #### Ámbito de una variable
 
-## Operadores
+- ## Operadores
 
-## Condicionales
+- ## Condicionales
 
-## Bucles
+- ## Bucles
 
-## Arrays
+- ## Arrays
 
-#### Inicialización de un array
+ * #### Inicialización de un array
 
-#### Cómo recorrer un array
+ * #### Cómo recorrer un array
 
-## Funciones y subrutinas
+- ## Funciones y subrutinas
 
-#### Paso por referencia y valor
+ * #### Paso por referencia y valor
 
