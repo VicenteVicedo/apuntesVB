@@ -59,6 +59,7 @@ dim cad1 = "cad" + "ena"
 dim cad2 = "cad" & "ena"
 'Tanto cad1 como cad2 almacenan el valor "cadena"
 ```
+- ``` += ```: Simplifica la sintaxis 
 ## Condicionales
 
 ## Bucles
