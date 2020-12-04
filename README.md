@@ -48,9 +48,9 @@ Dim nota = 9.7, altura = 1.83, nombre = "Jon García"
 ```
 En este caso no especificamos de qué tipo es cada variable ya que se puede **inferir** a partir del valor al cual son inicializadas.
 #### Ámbito de una variable
-
+A veces es posible que obtengamos un error del tipo *"uso de un variable que no ha sido declarada"*, sin embargo, sí que la hemos declarado. Esto se debe a que solo podemos acceder a la variable desde el mismo **ámbito** (o región) o un ámbito interior. Esto se entenderá mejor cuando se vean las partes de módulos, bucles, bloques condicionales... ya que son estos los que definen un nuevo ámbito.
 ## Operadores
-
+Los operadores nos ayudarán a modificar el valor de las variables según nos convenga y a tomar decisiones según su valor. Los operadores básicos de Visual Basic son:
 ## Condicionales
 
 ## Bucles
