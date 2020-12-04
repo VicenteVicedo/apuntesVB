@@ -17,21 +17,36 @@ Llamamos variables a un espacio de memoria que reservamos para almacenar un valo
 De esta forma podremos almacenar valores y trabajar con ellos, modificándolos, manipulándolos y realizando operaciones sobre ellos.
 #### Tipos de datos
 Dependiendo del dato que queramos almacenar, elegiremos el tipo de variable más adecuado para ello. Los básicos y más frecuentes en Visual Basic son los siguientes:
- - *Integer* (entero): Podremos almacenar valores numéricos enteros. Por ejemplo una edad o un año.
- - *Single* (decimal): Nos servirá para almacenar valores con parte decimal. Calificaciones, alturas...
- - *Booleano*: Con los tipos booleanos podremos representar las variables que solamente puedan tomar los valores verdadero o falso. Si un valor existe en un conjunto concreto, si una persona es mayor de edad, si posee carnet de conducir...
- - *Char* (caracter): Empleado para almacenar una única letra.
- - *String* (cadena de caracteres): Empleado para almacenar varias letras que forman una palabra o frase, por ejemplo lo que ponemos en un cuadro de búsqueda de cualquier web.
+ - **Integer** (entero): Podremos almacenar valores numéricos enteros. Por ejemplo una edad o un año.
+ - **Single** (decimal): Nos servirá para almacenar valores con parte decimal. Calificaciones, alturas...
+ - **Booleano**: Con los tipos booleanos podremos representar las variables que solamente puedan tomar los valores verdadero o falso. Si un valor existe en un conjunto concreto, si una persona es mayor de edad, si posee carnet de conducir...
+ - **Char** (caracter): Empleado para almacenar una única letra (por ejemplo, la letra de un DNI).
+ - **String** (cadena de caracteres): Empleado para almacenar varias letras que forman una palabra o frase, por ejemplo lo que ponemos en un cuadro de búsqueda de cualquier web.
  
 En caso de ser necesario algún otro tipo de dato, se puede consultar de la documentación oficial.
 https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/data-types/
 #### Cómo inicializar una variable
 Actualmente, Visual Basic nos ofrece varias formas para inicializar una variable.
+- Especificando el tipo:
 ```vb
 Dim edad As Integer
 edad = 18
-```
 
+Dim esMayorDeEdad As Boolean
+esMayorDeEdad = True
+
+Dim nota, altura as Single, nombre as String
+altura = 1.83
+nombre = "Jon García"
+```
+Se puede observar que para cada variable, decimos de qué tipo es (As Integer, As Boolean...).
+- Por inferencia de tipo
+```vb
+Dim edad = 18
+Dim esMayorDeEdad = True
+Dim nota = 9.7, altura = 1.83, nombre = "Jon García"
+```
+En este caso no especificamos de qué tipo es cada variable ya que se puede **inferir** a partir del valor al cual son inicializadas.
 #### Ámbito de una variable
 
 ## Operadores
