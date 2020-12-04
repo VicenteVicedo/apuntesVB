@@ -51,6 +51,14 @@ En este caso no especificamos de qué tipo es cada variable ya que se puede **in
 A veces es posible que obtengamos un error del tipo *"uso de un variable que no ha sido declarada"*, sin embargo, sí que la hemos declarado. Esto se debe a que solo podemos acceder a la variable desde el mismo **ámbito** (o región) o un ámbito interior. Esto se entenderá mejor cuando se vean las partes de módulos, bucles, bloques condicionales... ya que son estos los que definen un nuevo ámbito.
 ## Operadores
 Los operadores nos ayudarán a modificar el valor de las variables según nos convenga y a tomar decisiones según su valor. Los operadores básicos de Visual Basic son:
+- ``` + ```: Suma dos números enteros o concatena dos cadenas.
+```vb 
+dim suma = 3 + 5
+'Suma vale 8
+dim cad1 = "cad" + "ena"
+dim cad2 = "cad" & "ena"
+'Tanto cad1 como cad2 almacenan el valor "cadena"
+```
 ## Condicionales
 
 ## Bucles
