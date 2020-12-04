@@ -1,6 +1,6 @@
 # ApuntesVB
 Apuntes Visual Basic desde cero.
-# Índice
+## Índice
 - [Variables y tipos de datos](#variables-y-tipos-de-datos)
   * [Ámbito de una variable](#-mbito-de-una-variable)
 - [Operadores](#operadores)
