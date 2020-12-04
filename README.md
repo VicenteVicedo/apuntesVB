@@ -12,7 +12,7 @@ Apuntes Visual Basic desde cero.
 - [Funciones y subrutinas](#funciones-y-subrutinas)
   * [Paso por referencia y valor](#paso-por-referencia-y-valor)
 
-- ## Variables y tipos de datos
+## Variables y tipos de datos
 
 #### Ámbito de una variable
 
