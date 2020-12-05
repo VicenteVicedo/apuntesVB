@@ -89,7 +89,7 @@ Los operadores de comparación los veremos en la parte de condicionales.
 ## Condicionales
 Los bloques condidicionales son los que nos permiten ejecutar una parte del código u otra, en función de las condiciones que establezcamos. Las sentencias condicionales fundamentales de Visual Basic son: If ... Then y Select (conocido en otros lenguajes de programación como Switch).
 Las condiciones se estableceran mediante expresiones Booleanas, es decir, cualquier variable de tipo Booleano o una expresión lógica que podremos formar con operadores lógicos de comparación.
-Los operadores lógicos de comparación básicos son:
+Los operadores de comparación básicos son:
 * Igualdad (=)
 ```vb
 Dim TrueSiSonIguales as Boolean
@@ -110,10 +110,13 @@ Dim booleano2 = 3 <= 3 'True
 Dim booleano3 = 5 > 4  'True
 Dim booleano4 = 6 >= 7 'False
 ```
+Operadores lógicos And y Or
+* And:
+* Or:
 Ahora que ya sabemos qué es una expresión (o condición) lógica veremos como se aplican a los bloques condicionales.
 * ```vb If (condición lógica) Then```: Se ejecutará solo si la condición lógica se evalua a **True**. En caso contrario se ejecutarán las sentencias del bloque **Else** (si lo hubiese) o Else If (si lo hubiese y además se cumpliese su condición):
 ```vb
-If edad <= 67 Then
+If edad >= 67 Then
  Console.WriteLine("Está en la edad de jubilación")
 Else If edad >= 18 Then
  Console.WriteLine("No está en la edad de jubilación pero sí que es mayor de edad")
@@ -121,6 +124,21 @@ Else
  Console.WriteLine("Ni está en la edad de jubilación, ni es mayor de edad")
 End If
 ```
+En cuanto una sentencia If o Else If se cumpla, el resto del bloque condicional dejará de ejecutarse. Si ningún bloque If o Else if se ejecuta, se ejecutará el bucle Else, en caso de que lo hubiese.
+* ```vb Select Case (condición lógica) ```: si tenemos una sentencia If con muchos Else if anidados, esta puede ser simplificada sustituyéndola por un bloque Select Case:
+
+```vb
+Dim numDias As Integer
+Select Case (numeroDeMes)
+  Case 1, 3, 5, 7, 8, 10, 12
+     numDias = 31
+  Case 2
+     numDias = 28
+  Case Else
+     numDias = 30
+ End Select
+```
+*Nota: en este caso obviamos los años bisiestos y asumimos que la variable numeroDeMes siempre tendrá un valor correcto (entre 1 y 12).
 ## Bucles
 
 ## Arrays
@@ -130,6 +148,16 @@ End If
 #### Cómo recorrer un array
 
 ## Funciones y subrutinas
-
+```vb
+Dim numDias As Integer
+Select Case (numeroDeMes)
+  Case 1, 3, 5, 7, 8, 10, 12
+     numDias = 31
+  Case 2
+     numDias = 28
+  Case Else
+     numDias = 30
+ End Select
+```
 #### Paso por referencia y valor
 
