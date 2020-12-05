@@ -47,6 +47,7 @@ Dim esMayorDeEdad = True
 Dim nota = 9.7, altura = 1.83, nombre = "Jon García"
 ```
 En este caso no especificamos de qué tipo es cada variable ya que se puede **inferir** a partir del valor al cual son inicializadas.
+*Nota: en caso de que la opción Option Strict esté deshabilitada nos dejará usar una variable sin que haya sido previamente declarada. Aunque esto puede parecer más cómodo, se suele evitar este tipo de prácticas ya que complican la legilibidad del código. Esta opción se establece en la primera línea del código y toma el valor On/Off (Option Strict On/ Option Strict Off). Si no ponemos nada, la opción por defecto será Option Strict Off.
 #### Ámbito de una variable
 A veces es posible que obtengamos un error del tipo *"uso de un variable que no ha sido declarada"*, sin embargo, sí que la hemos declarado. Esto se debe a que solo podemos acceder a la variable desde el mismo **ámbito** (o región) o un ámbito interior. Esto se entenderá mejor cuando se vean las partes de módulos, bucles, bloques condicionales... ya que son estos los que definen un nuevo ámbito.
 ## Operadores
@@ -55,11 +56,22 @@ Los operadores nos ayudarán a modificar el valor de las variables según nos co
 ```vb 
 dim suma = 3 + 5
 'Suma vale 8
-dim cad1 = "cad" + "ena"
-dim cad2 = "cad" & "ena"
+Dim cad1 = "cad" + "ena"
+Dim cad2 = "cad" & "ena"
 'Tanto cad1 como cad2 almacenan el valor "cadena"
 ```
-- ``` += ```: Simplifica la sintaxis 
+- ``` += ```: Simplifica la sintaxis cuando uno de los operandos de la suma es la misma variable donde se almacena el resultado.
+```vb
+Dim suma = 3
+suma = suma + 5
+'suma vale 8
+```
+Es equivalente a
+```vb
+Dim suma = 3
+suma += 5
+'suma vale 8
+```
 ## Condicionales
 
 ## Bucles
