@@ -82,7 +82,7 @@ Dim cad2 = "cad"
 cad2 &= "ena"
 'cad2 almacena el valor "cadena"
 ```
-El resto de operadores aritméticos se usan de igual forma: resta (-), multiplicación (\*), exponenciación (^), división (/), división de resultado entero (descartando resto) (\). Al igual que pueden ser empleados junto al símbolo =: -=, \*=, =^, =\.
+El resto de operadores aritméticos se usan de igual forma: resta (-), multiplicación (\*), exponenciación (^), división (/), división de resultado entero (descartando resto) (\\). Al igual que pueden ser empleados junto al símbolo =: -=, \*=, =^, =\\.
 Los operadores de comparación los veremos en la parte de condicionales.
 ## Condicionales
 Los bloques condidicionales son los que nos permiten ejecutar una parte del código u otra, en función de las condiciones que establezcamos. Las sentencias condicionales fundamentales de Visual Basic son: If ... Then y Select (conocido en otros lenguajes de programación como Switch).
