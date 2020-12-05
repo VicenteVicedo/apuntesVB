@@ -49,6 +49,7 @@ Dim esMayorDeEdad = True
 Dim nota = 9.7, altura = 1.83, nombre = "Jon García"
 ```
 En este caso no especificamos de qué tipo es cada variable ya que se puede **inferir** a partir del valor al cual son inicializadas.
+
 *Nota: en caso de que la opción Option Strict esté deshabilitada nos dejará usar una variable sin que haya sido previamente declarada. Aunque esto puede parecer más cómodo, se suele evitar este tipo de prácticas ya que complican la legilibidad del código. Esta opción se establece en la primera línea del código y toma el valor On/Off (Option Strict On/ Option Strict Off). Si no ponemos nada, la opción por defecto será Option Strict Off.*
 #### Ámbito de una variable
 A veces es posible que obtengamos un error del tipo *"uso de un variable que no ha sido declarada"*, sin embargo, sí que la hemos declarado. Esto se debe a que solo podemos acceder a la variable desde el mismo **ámbito** (o región) o un ámbito interior. Esto se entenderá mejor cuando se vean las partes de módulos, bucles, bloques condicionales... ya que son estos los que definen un nuevo ámbito.
