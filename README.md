@@ -111,10 +111,10 @@ Dim booleano3 = 5 > 4  'True
 Dim booleano4 = 6 >= 7 'False
 ```
 Operadores lógicos And y Or
-* And:
-* Or:
+* And: se resuelve como True si las dos expresiones booleanas son True.
+* Or: se resuelve como True si al menos una expresión booleana es True.
 Ahora que ya sabemos qué es una expresión (o condición) lógica veremos como se aplican a los bloques condicionales.
-* ```vb If (condición lógica) Then```: Se ejecutará solo si la condición lógica se evalua a **True**. En caso contrario se ejecutarán las sentencias del bloque **Else** (si lo hubiese) o Else If (si lo hubiese y además se cumpliese su condición):
+* ```If (condición lógica) Then```: Se ejecutará solo si la condición lógica se evalua a **True**. En caso contrario se ejecutarán las sentencias del bloque **Else** (si lo hubiese) o Else If (si lo hubiese y además se cumpliese su condición):
 ```vb
 If edad >= 67 Then
  Console.WriteLine("Está en la edad de jubilación")
@@ -125,7 +125,7 @@ Else
 End If
 ```
 En cuanto una sentencia If o Else If se cumpla, el resto del bloque condicional dejará de ejecutarse. Si ningún bloque If o Else if se ejecuta, se ejecutará el bucle Else, en caso de que lo hubiese.
-* ```vb Select Case (condición lógica) ```: si tenemos una sentencia If con muchos Else if anidados, esta puede ser simplificada sustituyéndola por un bloque Select Case:
+* ```Select Case (condición lógica) ```: si tenemos una sentencia If con muchos Else if anidados, esta puede ser simplificada sustituyéndola por un bloque Select Case:
 
 ```vb
 Dim numDias As Integer
