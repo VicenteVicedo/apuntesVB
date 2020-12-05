@@ -54,11 +54,10 @@ A veces es posible que obtengamos un error del tipo *"uso de un variable que no 
 Los operadores nos ayudarán a modificar el valor de las variables según nos convenga y a tomar decisiones según su valor. Los operadores básicos de Visual Basic son:
 - ``` + ```: Suma dos números enteros o concatena dos cadenas.
 ```vb 
-dim suma = 3 + 5
+Dim suma = 3 + 5
 'Suma vale 8
 Dim cad1 = "cad" + "ena"
-Dim cad2 = "cad" & "ena"
-'Tanto cad1 como cad2 almacenan el valor "cadena"
+'cad1 almacena el valor "cadena"
 ```
 - ``` += ```: Simplifica la sintaxis cuando uno de los operandos de la suma es la misma variable donde se almacena el resultado.
 ```vb
@@ -72,8 +71,36 @@ Dim suma = 3
 suma += 5
 'suma vale 8
 ```
+- ``` & ```: Es empleado para concatenar dos cadenas, por lo tanto, es equivalente al operador + (aunque lógicamente, no suma dos números).
+```vb 
+Dim cad2 = "cad" + "ena"
+'cad2 almacena el valor "cadena"
+```
+- ``` +& ```: Análogo a +=.
+```vb 
+Dim cad2 = "cad"
+cad2 &= "ena"
+'cad2 almacena el valor "cadena"
+```
+El resto de operadores aritméticos se usan de igual forma: resta (-), multiplicación (\*), exponenciación (^), división (/), división de resultado entero (descartando resto) (\). Al igual que pueden ser empleados junto al símbolo =: -=, \*=, =^, =\.
+Los operadores de comparación los veremos en la parte de condicionales.
 ## Condicionales
-
+Los bloques condidicionales son los que nos permiten ejecutar una parte del código u otra, en función de las condiciones que establezcamos. Las sentencias condicionales fundamentales de Visual Basic son: If ... Then y Select (conocido en otros lenguajes de programación como Switch).
+Las condiciones se estableceran mediante expresiones Booleanas, es decir, cualquier variable de tipo Booleano o una expresión lógica que podremos formar con operadores lógicos de comparación.
+Los operadores lógicos de comparación básicos son:
+* Igualdad (=)
+```vb
+Dim TrueSiSonIguales as Boolean
+TrueSiSonIguales = 5 = 5
+'La variable TrueSiSonIguales almacena el valor True
+```
+*Nota: en otros lenguajes este operador se expresa como ```==```, para ser diferenciado del operador de asignación que utilizamos al dar valor a una variable (```vb Dim valor = 288```). En Visual Basic estos dos operadores (asignación y comparación) se diferencian a partir del contexto donde se utilicen. Así, el código de antes habría quedado más claro y legible de la siguiente forma:*
+```vb
+Dim TrueSiSonIguales as Boolean
+TrueSiSonIguales = (5 = 5)
+'La variable TrueSiSonIguales almacena el valor True
+```
+*Así diferenciamos mejor el operador de asignación (primer =) del operador de comparación (segundo =).*
 ## Bucles
 
 ## Arrays
