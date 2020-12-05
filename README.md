@@ -15,6 +15,8 @@ Apuntes Visual Basic desde cero.
 ## Variables y tipos de datos
 Llamamos variables a un espacio de memoria que reservamos para almacenar un valor, y al que nos podremos referir mediante un nombre o etiqueta.
 De esta forma podremos almacenar valores y trabajar con ellos, modificándolos, manipulándolos y realizando operaciones sobre ellos.
+
+Podremos llamar a las variables como queramos, pero siempre debemos escoger nombres descriptivos, de forma que si cualquier otra persona lee nuestro código, pueda entenderlo sin especial complicación.
 #### Tipos de datos
 Dependiendo del dato que queramos almacenar, elegiremos el tipo de variable más adecuado para ello. Los básicos y más frecuentes en Visual Basic son los siguientes:
  - **Integer** (entero): Podremos almacenar valores numéricos enteros. Por ejemplo una edad o un año.
@@ -26,7 +28,7 @@ Dependiendo del dato que queramos almacenar, elegiremos el tipo de variable más
 En caso de ser necesario algún otro tipo de dato, se puede consultar de la documentación oficial.
 https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/data-types/
 #### Cómo inicializar una variable
-Actualmente, Visual Basic nos ofrece varias formas para inicializar una variable.
+Actualmente, Visual Basic nos ofrece varias formas para inicializar una variable, siempre empleando la palabra reservada ```vb Dim```.
 - Especificando el tipo:
 ```vb
 Dim edad As Integer
@@ -101,6 +103,24 @@ TrueSiSonIguales = (5 = 5)
 'La variable TrueSiSonIguales almacena el valor True
 ```
 *Así diferenciamos mejor el operador de asignación (primer =) del operador de comparación (segundo =).*
+* Mayor que, mayor o igual que (>), (>=), menor que, menor o igual que (<), (>=):
+```vb
+Dim booleano1 = 3 < 3  'False
+Dim booleano2 = 3 <= 3 'True
+Dim booleano3 = 5 > 4  'True
+Dim booleano4 = 6 >= 7 'False
+```
+Ahora que ya sabemos qué es una expresión (o condición) lógica veremos como se aplican a los bloques condicionales.
+* ```vb If (condición lógica) Then```: Se ejecutará solo si la condición lógica se evalua a **True**. En caso contrario se ejecutarán las sentencias del bloque **Else** (si lo hubiese) o Else If (si lo hubiese y además se cumpliese su condición):
+```vb
+If edad <= 67 Then
+ Console.WriteLine("Está en la edad de jubilación")
+Else If edad >= 18 Then
+ Console.WriteLine("No está en la edad de jubilación pero sí que es mayor de edad")
+Else
+ Console.WriteLine("Ni está en la edad de jubilación, ni es mayor de edad")
+End If
+```
 ## Bucles
 
 ## Arrays
