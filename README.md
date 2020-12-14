@@ -11,7 +11,7 @@ Apuntes Visual Basic desde cero.
   * [Cómo recorrer un array](#c-mo-recorrer-un-array)
 - [Funciones y subrutinas](#funciones-y-subrutinas)
   * [Paso por referencia y valor](#paso-por-referencia-y-valor)
-
+- [Ejercicios](#Ejercicios)
 ## Variables y tipos de datos
 Llamamos variables a un espacio de memoria que reservamos para almacenar un valor, y al que nos podremos referir mediante un nombre o etiqueta.
 De esta forma podremos almacenar valores y trabajar con ellos, modificándolos, manipulándolos y realizando operaciones sobre ellos.
@@ -162,3 +162,14 @@ Select Case (numeroDeMes)
 ```
 #### Paso por referencia y valor
 
+
+## Ejercicios
+
+#### ¿cuál de las dos siguientes afirmaciones aporta más información (en bits)?
+1- La rueda del coche que se pinchó fue la trasera izquierda.
+Para representar esta información se puede usar un entero, pudiendo obtener los valores 0, 1, 2, 3 (0 = se ha pinchado la delantera izq, 1 = la delantera derecha, 2 = la trasera izq, 3 = la trasera derecha). En este caso representaríamos que se ha pinchado la rueda trasera izquierda con el número 2. Con una variable de tipo Byte nos sería suficiente (ya que va de 0-255). Por lo que sería representado con **8 bits** de información.
+
+2- Para representar el sexo de un bebé podemos emplear un booleano (por ejemplo esNiña). Un booleano ocupa en memoria 2 bytes (o lo que es lo mismo **16 bits**)
+
+#### Analizar ensamblador
+suma 7(B) y 2(C) y lo almacena en la pos de memoria 00100 (A)
